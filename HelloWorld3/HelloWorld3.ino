@@ -3,23 +3,19 @@
 **                            TÍTOL:                           **
 **                         Hello world3                        **
 **                                                             **
-**   NOM: Abel Picó                           Data:06/02/17    **
+**   NOM: Abel Picó                           Data:30/01/17    **
 ****************************************************************/
 //************************** INCLUDE ****************************
 
 
 //************************* VARIABLES ***************************
 
-
+int x = x+ 1;
 //*************************** SETUP *****************************
 
 void setup() {
   
   Serial.begin(9600);  // Inicia la llibreria serial a velocitat de 9600 bps
-  Serial.println("Escull la opcio que vols escollir: "); //mostra per pantalla aquesta frase
-  Serial.println("  1. Comprovar el numero de tarjeta de credit.");
-  Serial.println("  2. Comprovar numero de compte bancari.");
-  Serial.println("  3. Buscar un digit perdut de la targeta de credit.");
 
 }
 
@@ -28,7 +24,8 @@ void setup() {
 
 void loop() {
   
-
+  Serial.println("Hello world "), x;  //Escriu hello world cada segon en una linia nova
+  delay(1000); //estableix el temps en 1s
 }
 
 
