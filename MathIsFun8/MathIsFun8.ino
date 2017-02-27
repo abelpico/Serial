@@ -11,7 +11,7 @@
 //************************* VARIABLES ***************************
 
 int drive_gb = 100;
-float drive_mb;
+long drive_mb;
 long drive_kb;
 long real_drive_mb;
 long real_drive_kb;
@@ -26,7 +26,7 @@ void setup()
   Serial.print(drive_gb);
   Serial.println(" Gb.");
   
-  Serial.print("En teoria, pot guardar");
+  Serial.print("En teoria, pot guardar ");
   drive_mb = drive_gb * 1024;
   Serial.print(drive_mb);
   Serial.print(" Megabytes, ");
@@ -34,15 +34,15 @@ void setup()
   Serial.print(drive_kb);
   Serial.println(" Kilobytes.");
   
-  Serial.print("Pero realment, nomes pot guardar");
+  Serial.print("Pero realment, nomes pot guardar ");
   real_drive_mb = drive_gb * 1000;
   Serial.print(real_drive_mb);
   Serial.print(" Megabytes, ");
   real_drive_kb = drive_mb * 1000;
   Serial.print(real_drive_kb);
-  Serial.println(" Kilobytes");
+  Serial.println(" Kilobytes.");
   
-  Serial.print("Estas perdent");
+  Serial.print("Estas perdent ");
   Serial.print(drive_kb - real_drive_kb);
   Serial.print(" Kilobytes");
   
