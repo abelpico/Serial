@@ -27,7 +27,8 @@ void setup()
   Serial.println(" Gb.");
   
   Serial.print("En teoria, pot guardar ");
-  drive_mb = drive_gb * 1024;
+  drive_mb = drive_gb;
+  drive_mb = drive_mb * 1024;
   Serial.print(drive_mb);
   Serial.print(" Megabytes, ");
   drive_kb = drive_mb * 1024;
@@ -35,10 +36,11 @@ void setup()
   Serial.println(" Kilobytes.");
   
   Serial.print("Pero realment, nomes pot guardar ");
-  real_drive_mb = drive_gb * 1000;
+  real_drive_mb = drive_gb;
+  real_drive_mb = real_drive_mb * 1000;
   Serial.print(real_drive_mb);
   Serial.print(" Megabytes, ");
-  real_drive_kb = drive_mb * 1000;
+  real_drive_kb = real_drive_mb * 1000;
   Serial.print(real_drive_kb);
   Serial.println(" Kilobytes.");
   
